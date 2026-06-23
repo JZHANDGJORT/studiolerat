@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio Lerat</title>
-
     <style>
         html {
             scroll-behavior: smooth;
         }
-
         body {
             margin: 0;
             font-family: Georgia, serif;
@@ -17,28 +15,23 @@
             color: #4d433d;
             text-align: center;
         }
-
         header {
             padding: 60px 20px 40px;
         }
-
         .logo {
             max-width: 250px;
             width: 80%;
             height: auto;
         }
-
         .intro {
             max-width: 700px;
             margin: 0 auto;
             padding: 20px;
             line-height: 1.7;
         }
-
         nav {
             margin: 40px 0;
         }
-
         nav a {
             display: inline-block;
             margin: 10px;
@@ -49,68 +42,59 @@
             border-radius: 999px;
             transition: 0.2s;
         }
-
         nav a:hover {
             background: #e8dfd5;
         }
-
         /* GALLERI */
-        .gallery-preview-wrapper {
+        #galleri {
             max-width: 1000px;
             margin: 70px auto;
             padding: 20px;
         }
-
-        .gallery-preview-wrapper h2 {
+        .gallery-section {
+            margin-bottom: 70px;
+        }
+        .gallery-section h2 {
             margin-bottom: 30px;
         }
-
-        .gallery-preview {
+        .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 15px;
         }
-
-        .gallery-preview img {
+        .gallery-grid img {
             width: 100%;
             border-radius: 12px;
             object-fit: cover;
         }
-
         /* PROJEKT */
         .projects {
             max-width: 1000px;
             margin: 70px auto;
             padding: 20px;
         }
-
         .projects h2 {
             margin-bottom: 30px;
         }
-
         .project-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
             gap: 20px;
         }
-
         .project-card {
             background: white;
             border-radius: 12px;
             overflow: hidden;
             padding-bottom: 20px;
         }
-
         .project-card img {
             width: 100%;
             height: 250px;
             object-fit: cover;
         }
-
         .project-card h3 {
             margin: 20px 0 10px;
         }
-
         .project-card a {
             display: inline-block;
             padding: 10px 20px;
@@ -120,18 +104,27 @@
             border-radius: 999px;
             transition: 0.2s;
         }
-
         .project-card a:hover {
             background: #e8dfd5;
         }
-
         /* KONTAKT */
         .contact {
             max-width: 700px;
             margin: 80px auto;
             padding: 20px;
         }
-
+        .contact a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 12px 24px;
+            text-decoration: none;
+            color: #4d433d;
+            border: 1px solid #cdbba8;
+            border-radius: 999px;
+        }
+        .contact a:hover {
+            background: #e8dfd5;
+        }
         footer {
             margin-top: 60px;
             padding: 30px;
@@ -140,93 +133,68 @@
         }
     </style>
 </head>
-
 <body>
-
 <header>
     <img src="images/IMG_8151.png" alt="Studio Lerat" class="logo">
 </header>
-
 <section class="intro">
     <p>Välkommen till Studio Lerat.</p>
     <p>Här samlas min keramik, pågående projekt och annat jag skapar.</p>
 </section>
-
 <nav>
     <a href="#galleri">Galleri</a>
     <a href="#projekt">Projekt</a>
     <a href="#kontakt">Kontakt</a>
     <a href="https://www.instagram.com/studio_lerat?igsh=bmZmc2J3a2x0Y3Ay" target="_blank">Instagram</a>
 </nav>
-
-<!-- ATELJÉ -->
-<section id="atelje" class="gallery-section">
-
-    <h2>Ateljé</h2>
-
-    <div class="gallery-grid">
-        <img src="https://picsum.photos/400?21" alt="Ateljébild 1">
-        <img src="https://picsum.photos/400?22" alt="Ateljébild 2">
-        <img src="https://picsum.photos/400?23" alt="Ateljébild 3">
-    </div>
-
+<section id="galleri">
+    <section class="gallery-section">
+        <h2>Ateljé</h2>
+        <div class="gallery-grid">
+            <img src="https://picsum.photos/400?21" alt="Ateljé 1">
+            <img src="https://picsum.photos/400?22" alt="Ateljé 2">
+            <img src="https://picsum.photos/400?23" alt="Ateljé 3">
+        </div>
+    </section>
+    <section class="gallery-section">
+        <h2>Keramik</h2>
+        <div class="gallery-grid">
+            <img src="https://picsum.photos/400?10" alt="Keramik 1">
+            <img src="https://picsum.photos/400?11" alt="Keramik 2">
+            <img src="https://picsum.photos/400?12" alt="Keramik 3">
+        </div>
+    </section>
 </section>
-
-<!-- KERAMIK -->
-<section id="keramik" class="gallery-section">
-
-    <h2>Keramik</h2>
-
-    <div class="gallery-grid">
-        <img src="https://picsum.photos/400?10" alt="Keramik 1">
-        <img src="https://picsum.photos/400?11" alt="Keramik 2">
-        <img src="https://picsum.photos/400?12" alt="Keramik 3">
-    </div>
-
-</section>
-
-<!-- PROJEKT -->
 <section id="projekt" class="projects">
     <h2>Projekt</h2>
-
     <div class="project-grid">
-
         <div class="project-card">
             <img src="https://picsum.photos/400?10" alt="Lyckokaka">
             <h3>Lyckokaka</h3>
             <a href="https://jzhandgjort.github.io/Meddig/?id=lyckokaka01" target="_blank">Läs mer</a>
         </div>
-
         <div class="project-card">
             <img src="https://picsum.photos/400?11" alt="Lugnstenen">
             <h3>Lugnstenen</h3>
             <a href="https://jzhandgjort.github.io/Meddig/?id=lugnsten01" target="_blank">Läs mer</a>
         </div>
-
         <div class="project-card">
             <img src="https://picsum.photos/400?12" alt="Hjärtat">
             <h3>Hjärtat</h3>
             <a href="https://jzhandgjort.github.io/Meddig/?id=hjarta01" target="_blank">Läs mer</a>
         </div>
-
     </div>
 </section>
-
-<!-- KONTAKT -->
 <section id="kontakt" class="contact">
     <h2>Kontakt</h2>
-
     <p>Har du frågor om min keramik eller vill beställa något?</p>
-    <p>Skicka ett DM på Instagram:</p>
-
+    <p>Du når mig enklast via Instagram:</p>
     <a href="https://www.instagram.com/studio_lerat" target="_blank">
-        Kontakta mig på Instagram
+        Skicka DM på Instagram
     </a>
 </section>
-
 <footer>
     Studio Lerat
 </footer>
-
 </body>
 </html>
