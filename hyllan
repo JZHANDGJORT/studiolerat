@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>På hyllan | Studio Lerat</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            background: #f6f3ee;
+            color: #4d433d;
+            text-align: center;
+        }
+
+        header {
+            padding: 60px 20px 30px;
+        }
+
+        .logo {
+            max-width: 400px;
+            width: 80%;
+            height: auto;
+        }
+
+        .intro {
+            max-width: 700px;
+            margin: 0 auto 50px;
+            padding: 0 20px;
+            line-height: 1.7;
+        }
+
+        .shelf-grid {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .item-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .item-card img {
+            width: 100%;
+            border-radius: 12px;
+            height: auto;
+        }
+
+        .item-card h3 {
+            margin-top: 20px;
+        }
+
+        .item-card p {
+            color: #7a6f66;
+            line-height: 1.6;
+        }
+
+        .item-card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #4d433d;
+            border: 1px solid #cdbba8;
+            border-radius: 999px;
+        }
+
+        .item-card a:hover {
+            background: #e8dfd5;
+        }
+
+        .back-link {
+            margin: 60px 0;
+        }
+
+        .back-link a {
+            text-decoration: none;
+            color: #4d433d;
+            border: 1px solid #cdbba8;
+            padding: 12px 24px;
+            border-radius: 999px;
+        }
+
+        .back-link a:hover {
+            background: #e8dfd5;
+        }
+
+        footer {
+            padding: 30px;
+            color: #7a6f66;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="images/IMG_8151.png" alt="Studio Lerat" class="logo">
+</header>
+
+<section class="intro">
+    <h1>På hyllan</h1>
+
+    <p>
+        Här finns föremål som redan är skapade och
+        väntar på ett nytt hem.
+    </p>
+
+    <p>
+        Om något fångar ditt intresse är du varmt välkommen
+        att höra av dig via Instagram.
+    </p>
+</section>
+
+<div class="shelf-grid">
+
+    <div class="item-card">
+        <img src="images/placeholder1.jpg" alt="Föremål">
+
+        <h3>Skål i stengods</h3>
+
+        <p>
+            Handgjord skål med varm sandfärgad glasyr.
+            Finns i ett exemplar.
+        </p>
+
+        <a href="https://www.instagram.com/studio_lerat" target="_blank">
+            Intresserad
+        </a>
+    </div>
+
+    <div class="item-card">
+        <img src="images/placeholder2.jpg" alt="Föremål">
+
+        <h3>Kopp med snäckavtryck</h3>
+
+        <p>
+            Handgjord kopp med organiska detaljer.
+            Finns i ett exemplar.
+        </p>
+
+        <a href="https://www.instagram.com/studio_lerat" target="_blank">
+            Intresserad
+        </a>
+    </div>
+
+</div>
+
+<div class="back-link">
+    <a href="index.html">← Tillbaka till Studio Lerat</a>
+</div>
+
+<footer>
+    Studio Lerat
+</footer>
+
+</body>
+</html>
