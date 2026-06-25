@@ -97,6 +97,19 @@
             color: #7a6f66;
             font-size: 0.9rem;
         }
+.products {
+    display: none;
+}
+
+body.has-products .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+body.has-products .empty-state {
+    display: none;
+}
     </style>
 </head>
 <body>
