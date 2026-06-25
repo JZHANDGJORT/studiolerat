@@ -35,23 +35,41 @@
             max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
+        }
+
+        /* PRODUKTER */
+        .products {
+            display: none;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
         }
 
+        body.has-products .products {
+            display: grid;
+        }
+
+        body.has-products .empty-state {
+            display: none;
+        }
+
+        /* ITEM CARD */
         .item-card {
             background: white;
             border-radius: 12px;
             padding: 20px;
         }
 
-     .item-card img {
-    width: 100%;
-    border-radius: 12px;
-    height: auto;
-    opacity: 0.6;
-}
+        .item-card img {
+            width: 100%;
+            border-radius: 12px;
+            height: auto;
+        }
+
+        /* ENDAST EMPTY STATE = opacity */
+        .empty-state img {
+            opacity: 0.6;
+        }
 
         .item-card h3 {
             margin-top: 20px;
@@ -97,21 +115,9 @@
             color: #7a6f66;
             font-size: 0.9rem;
         }
-.products {
-    display: none;
-}
-
-body.has-products .products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-}
-
-body.has-products .empty-state {
-    display: none;
-}
     </style>
 </head>
+
 <body>
 
 <header>
@@ -121,87 +127,65 @@ body.has-products .empty-state {
 <section class="intro">
     <h1>På hyllan</h1>
 
-    <p>
-        Här visas föremål som väntar på ett nytt hem.
-    </p>
+    <p>Här visas föremål som väntar på ett nytt hem.</p>
 
-    <p>
-        Om något fångar ditt intresse är du varmt välkommen
-        att höra av dig via Instagram.
-    </p>
+    <p>Om något fångar ditt intresse är du varmt välkommen att höra av dig via Instagram.</p>
 </section>
 
 <div class="shelf-grid">
-    
-<!-- TOMT STATE -->
+
+    <!-- EMPTY STATE -->
     <div class="empty-state">
-    <div class="item-card">
-        <img src="images/IMG_8672.jpeg" alt="Föremål">
+        <div class="item-card">
+            <img src="images/IMG_8672.jpeg" alt="Föremål">
 
-        <h3>Inga föremål på hyllan just nu</h3>
+            <h3>Inga föremål på hyllan just nu</h3>
 
-        <p>
-            Just nu väntar inga föremål på ett nytt hem. 
-            Titta gärna tillbaka vid ett senare tillfälle eller 
-            följ Studio Lerat på Instagram för att se nya alster när de blir klara.
-        </p>
+            <p>
+                Just nu väntar inga föremål på ett nytt hem.
+                Titta gärna tillbaka vid ett senare tillfälle eller följ Studio Lerat på Instagram.
+            </p>
 
-        <a href="https://www.instagram.com/studio_lerat" target="_blank">
-            Följ på Instagram
-        </a>
-    </div>
+            <a href="https://www.instagram.com/studio_lerat" target="_blank">
+                Följ på Instagram
+            </a>
         </div>
-    
-<!-- PRODUKTER -->
+    </div>
+
+    <!-- PRODUCTS -->
     <div class="products">
 
         <div class="item-card">
-
             <img src="images/placeholder1.jpg" alt="Skål i stengods">
 
             <h3>Skål i stengods</h3>
 
             <p>
-
                 Handgjord skål med varm sandfärgad glasyr.
-
                 Finns i ett exemplar.
-
             </p>
 
             <a href="https://www.instagram.com/studio_lerat" target="_blank">
-
                 Intresserad
-
             </a>
-
         </div>
 
         <div class="item-card">
-
             <img src="images/placeholder2.jpg" alt="Kopp med snäckavtryck">
 
             <h3>Kopp med snäckavtryck</h3>
 
             <p>
-
                 Handgjord kopp med organiska detaljer.
-
                 Finns i ett exemplar.
-
             </p>
 
             <a href="https://www.instagram.com/studio_lerat" target="_blank">
-
                 Intresserad
-
             </a>
-
         </div>
 
     </div>
-
-</section>
 
 </div>
 
