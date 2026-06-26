@@ -40,7 +40,6 @@
         /* PRODUKTER */
         .products {
             display: none;
-            display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
         }
@@ -66,7 +65,7 @@
             height: auto;
         }
 
-        /* ENDAST EMPTY STATE = opacity */
+        /* Bara tomma hyllan får nedtonad bild */
         .empty-state img {
             opacity: 0.6;
         }
@@ -118,6 +117,7 @@
     </style>
 </head>
 
+<!-- Lägg till class="has-products" här när du har produkter -->
 <body>
 
 <header>
@@ -152,7 +152,7 @@
         </div>
     </div>
 
-    <!-- PRODUCTS -->
+    <!-- PRODUKTER -->
     <div class="products">
 
         <div class="item-card">
