@@ -1,1 +1,346 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Lerat</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            background: #f6f3ee;
+            color: #4d433d;
+            text-align: center;
+        }
+        header {
+            padding: 60px 20px 40px;
+        }
+        .logo {
+            max-width: 500px;
+            width: 80%;
+            height: auto;
+        }
+        .intro {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.7;
+        }
+        nav {
+            margin: 40px 0;
+        }
+        nav a {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 24px;
+            text-decoration: none;
+            color: #4d433d;
+            border: 1px solid #cdbba8;
+            border-radius: 999px;
+            transition: 0.2s;
+        }
+        nav a:hover {
+            background: #e8dfd5;
+        }
+        /* GALLERI */
+        #galleri {
+            max-width: 1000px;
+            margin: 70px auto;
+            padding: 20px;
+        }
+        .gallery-section {
+            margin-bottom: 70px;
+        }
+        .gallery-section h2 {
+            margin-bottom: 30px;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .gallery-grid img {
+            width: 100%;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+        /* PROJEKT */
+        .projects {
+            max-width: 1000px;
+            margin: 70px auto;
+            padding: 20px;
+        }
+        .projects h2 {
+            margin-bottom: 30px;
+        }
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            gap: 20px;
+        }
+        .project-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+}
+        .project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+        .project-card h3 {
+            margin: 20px 0 10px;
+        }
+        .project-card p {
+    line-height: 1.5;
+    color: #7a6f66;
+    min-height: 70px;
+}
+        .project-card a {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #4d433d;
+            border: 1px solid #cdbba8;
+            border-radius: 999px;
+            transition: 0.2s;
+        }
+        .project-card a:hover {
+            background: #e8dfd5;
+        }
+        /* OM MIG */
 
+.about {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+.about-card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.about-card img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.about-card h2 {
+    margin-bottom: 20px;
+}
+
+.about-card p {
+    max-width: 650px;
+    margin: 0 auto 15px;
+    line-height: 1.8;
+    color: #7a6f66;
+}
+        /* KONTAKT */
+        .contact {
+            max-width: 700px;
+            margin: 80px auto;
+            padding: 20px;
+        }
+        .contact a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 12px 24px;
+            text-decoration: none;
+            color: #4d433d;
+            border: 1px solid #cdbba8;
+            border-radius: 999px;
+        }
+        .contact a:hover {
+            background: #e8dfd5;
+        }
+        footer {
+            margin-top: 60px;
+            padding: 30px;
+            color: #7a6f66;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="images/IMG_8151.png" alt="Studio Lerat" class="logo">
+</header>
+<section class="intro">
+    <p>Välkommen till Studio Lerat.</p>
+    <p>Här samlas min keramik, pågående projekt och annat jag skapar.</p>
+</section>
+<nav>
+    <a href="#galleri">Galleri</a>
+    <a href="#projekt">Projekt</a>
+    <a href="#ommig">Om mig</a>
+    <a href="#kontakt">Kontakt</a>
+    <a href="https://www.instagram.com/studio_lerat?igsh=bmZmc2J3a2x0Y3Ay" target="_blank">Instagram</a>
+</nav>
+<section id="galleri">
+    <section class="gallery-section">
+        <h2>Ateljé</h2>
+        <div class="gallery-grid">
+            <img src="images/IMG_8734.jpeg" alt="Ateljé 1">
+            <img src="images/IMG_8736.jpeg" alt="Ateljé 2">
+            <img src="images/IMG_8733.jpeg" alt="Ateljé 3">
+        </div>
+    </section>
+    <section class="gallery-section">
+        <h2>Keramik</h2>
+        <div class="gallery-grid">
+            <img src="images/IMG_8672.jpeg" alt="Keramik 1">
+            <img src="images/IMG_5562.jpeg" alt="Keramik 2">
+            <img src="images/IMG_5566.jpeg" alt="Keramik 3">
+            <img src="images/IMG_5580.jpeg" alt="Keramik 4">
+            <img src="images/IMG_5581.jpeg" alt="Keramik 5">
+            <img src="images/IMG_7310.jpeg" alt="Keramik 6">
+        </div>
+    </section>
+</section>
+<section id="projekt" class="projects">
+    <h2>Projekt</h2>
+    <div class="project-grid">
+        <div class="project-card">
+    <img src="images/IMG_8672.jpeg" alt="På hyllan">
+
+    <h3>På hyllan</h3>
+
+    <p>
+        Här visas föremål som väntar på ett nytt hem.
+    </p>
+
+    <a href="hyllan.html">
+        Till hyllan →
+    </a>
+</div>
+        <div class="project-card">
+    <img src="images/2497CBF2-BF17-4575-9464-A3F8C59546CB.png" alt="Lyckokaka">
+
+    <h3>Lyckokaka</h3>
+
+    <p>
+        Keramiska lyckokakor med inbyggd NFC-teknik som bjuder på ord att bära med sig genom dagen.
+    </p>
+
+    <a href="https://jzhandgjort.github.io/meddig/?id=lyckokaka01" target="_blank">
+        Öppna projekt →
+    </a>
+</div>
+        <div class="project-card">
+    <img src="images/F7FE952E-7ABB-4D26-90C3-04E2F6D649C7.png" alt="Lugnstenen">
+
+    <h3>Lugnstenen</h3>
+
+    <p>
+        En liten keramisk sten att bära med sig,
+        hålla i handen och återvända till när livet
+        behöver sakta ner.
+    </p>
+
+    <a href="https://jzhandgjort.github.io/meddig/?id=lugnsten01" target="_blank">
+        Öppna projekt →
+    </a>
+</div>
+        <div class="project-card">
+    <img src="images/8C9F180D-88FF-4E92-9C72-439F09ABBF3C.png" alt="Hjärtat">
+
+    <h3>Hjärtat</h3>
+
+    <p>
+        Ett handgjort keramiskt hjärta som hjälper dig 
+        att stanna upp och rikta vänliga tankar till dig själv. 
+        En liten påminnelse om självkärlek i vardagen.
+    </p>
+
+    <a href="https://jzhandgjort.github.io/meddig/?id=hjarta01" target="_blank">
+        Öppna projekt →
+    </a>
+</div>
+    <div class="project-card">
+    <img src="images/FF986846-5F77-4E4C-9CF0-24B31D6D7023.png" alt="Mammahjärtat">
+
+    <h3>Mammahjärtat</h3>
+
+    <p>
+        Ett handgjort keramiskt hjärta som bär små vänliga ord till dig, mamma.
+        En liten påminnelse om att du är värdefull, stark och tillräcklig.
+    </p>
+
+    <a href="https://jzhandgjort.github.io/meddig/?id=mamma01" target="_blank">
+        Öppna projekt →
+    </a>
+</div>
+        <div class="project-card">
+    <img src="images/E07A26A4-345F-44E4-AE51-EAB89DB2DF1B.png" alt="Mammahjärtat">
+
+    <h3>Landa</h3>
+
+    <p>
+        Ett handgjort keramiskt hjärta som hjälper dig att landa.
+        Små påminnelser att andas, mjukna och vara snäll mot dig själv.
+    </p>
+
+    <a href="https://jzhandgjort.github.io/meddig/?id=landa01" target="_blank">
+        Öppna projekt →
+    </a>
+</div>
+    <div class="project-card">
+    <img src="images/57E40491-2340-464B-BA44-12AC20F16054.png" alt="Smahander">
+
+    <h3>Från små händer</h3>
+
+    <p>
+        Ett kreativt kit där barnet får skapa en personlig gåva med sina egna händer till någon som gör stor skillnad.
+    </p>
+
+    <a href="https://jzhandgjort.github.io/meddig/?id=smahander01" target="_blank">
+        Öppna projekt →
+    </a>
+</div>
+    </div>
+</section>
+    <!-- OM MIG -->
+ <section id="ommig">   
+<section class="about">
+    <div class="about-card">
+
+        <img src="images/att.YQLfDQwsp3aYrA6myx3nJS6G5bZZxyxffdb5Ml0Kms8.jpeg" alt="Jennifer i ateljén">
+
+        <h2>Hej, jag heter Jennifer</h2>
+
+        <p>
+            Studio Lerat är min plats för keramik, idéer och projekt.
+        </p>
+
+        <p>
+            Här samsas vardagsföremål, experiment och 
+            projekt som får växa fram i sin egen takt.
+        </p>
+
+        <p>
+            Tack för att du tittar in.
+        </p>
+
+    </div>
+</section>
+     </section>
+<section id="kontakt" class="contact">
+    <h2>Kontakt</h2>
+    <p>Har du frågor eller vill veta mer om min keramik? Kontakta mig gärna.</p>
+    <p>Du når mig enklast via Instagram:</p>
+    <a href="https://www.instagram.com/studio_lerat" target="_blank">
+        Skicka DM på Instagram
+    </a>
+</section>
+<footer>
+    Studio Lerat
+</footer>
+</body>
+</html>
