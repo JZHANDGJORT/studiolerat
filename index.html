@@ -122,34 +122,26 @@
 
     scroll-snap-align: center;
 }
-        .gallery-wrapper {
+.gallery-wrapper {
     position: relative;
 }
 
-.gallery-arrow {
+.dots {
+    display:flex;
+    justify-content:center;
+    gap:7px;
+    margin-top:10px;
+}
 
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+.dot {
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:rgba(77,67,61,0.3);
+}
 
-    width: 38px;
-    height: 38px;
-
-    border: none;
-    border-radius: 50%;
-
-    background: rgba(255,255,255,0.75);
-    backdrop-filter: blur(4px);
-
-    cursor: pointer;
-
-    font-size: 22px;
-    color: #4d433d;
-
-    transition: 0.2s;
-
-    z-index: 5;
-
+.dot.active {
+    background:#4d433d;
 }
 
 .gallery-arrow:hover{
