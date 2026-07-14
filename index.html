@@ -476,35 +476,69 @@
     
 <script>
 
-document.querySelectorAll(".gallery").forEach(gallery => {
+document.querySelectorAll(".gallery-wrapper").forEach(wrapper => {
 
-    const dots = gallery.parentElement.querySelectorAll(".dot");
+    const gallery = wrapper.querySelector(".gallery");
     const images = gallery.querySelectorAll("img");
+    const dotsContainer = wrapper.querySelector(".dots");
 
-    if (!dots.length) return;
+
+    // Skapa prickar automatiskt
+    images.forEach((image, index) => {
+
+        const dot = document.createElement("span");
+
+        dot.classList.add("dot");
+
+        if(index === 0){
+            dot.classList.add("active");
+        }
+
+        dotsContainer.appendChild(dot);
+
+    });
 
 
+    const dots = dotsContainer.querySelectorAll(".dot");
+
+
+    // Dölj prickar om det bara finns en bild
+    if(images.length <= 1){
+        dotsContainer.style.display = "none";
+    }
+
+
+    // Uppdatera aktiv prick vid svep
     gallery.addEventListener("scroll", () => {
 
         let closest = 0;
-        let smallestDistance = Infinity;
+        let distance = Infinity;
 
-        images.forEach((img, index) => {
 
-            const imageCenter = img.offsetLeft + img.offsetWidth / 2;
-            const galleryCenter = gallery.scrollLeft + gallery.offsetWidth / 2;
+        images.forEach((image,index)=>{
 
-            const distance = Math.abs(imageCenter - galleryCenter);
+            const imageCenter =
+                image.offsetLeft + image.offsetWidth / 2;
 
-            if(distance < smallestDistance){
-                smallestDistance = distance;
+            const galleryCenter =
+                gallery.scrollLeft + gallery.offsetWidth / 2;
+
+
+            const diff = Math.abs(imageCenter - galleryCenter);
+
+
+            if(diff < distance){
+                distance = diff;
                 closest = index;
             }
 
         });
 
 
-        dots.forEach(dot => dot.classList.remove("active"));
+        dots.forEach(dot=>{
+            dot.classList.remove("active");
+        });
+
 
         if(dots[closest]){
             dots[closest].classList.add("active");
