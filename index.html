@@ -111,6 +111,47 @@
     scroll-snap-align: center;
     border-radius: 12px;
 }
+        .gallery-wrapper {
+    position: relative;
+}
+
+.gallery-arrow {
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 38px;
+    height: 38px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(4px);
+
+    cursor: pointer;
+
+    font-size: 22px;
+    color: #4d433d;
+
+    transition: 0.2s;
+
+    z-index: 5;
+
+}
+
+.gallery-arrow:hover{
+    background:white;
+}
+
+.gallery-arrow.prev{
+    left:10px;
+}
+
+.gallery-arrow.next{
+    right:10px;
+}
         .project-card h3 {
             margin: 20px 0 10px;
         }
