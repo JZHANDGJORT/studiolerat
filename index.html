@@ -461,5 +461,34 @@
 <footer>
     Studio Lerat
 </footer>
+    
+    <script>
+
+document.querySelectorAll(".gallery").forEach(gallery => {
+
+    const dots = gallery.parentElement.querySelectorAll(".dot");
+
+    if (!dots.length) return;
+
+
+    gallery.addEventListener("scroll", () => {
+
+        const index = Math.round(
+            gallery.scrollLeft / gallery.clientWidth
+        );
+
+
+        dots.forEach(dot => dot.classList.remove("active"));
+
+        if(dots[index]){
+            dots[index].classList.add("active");
+        }
+
+    });
+
+});
+
+</script>
+    
 </body>
 </html>
