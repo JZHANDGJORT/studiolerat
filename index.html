@@ -490,26 +490,40 @@
     Studio Lerat
 </footer>
     
-    <script>
+<script>
 
 document.querySelectorAll(".gallery").forEach(gallery => {
 
     const dots = gallery.parentElement.querySelectorAll(".dot");
+    const images = gallery.querySelectorAll("img");
 
     if (!dots.length) return;
 
 
     gallery.addEventListener("scroll", () => {
 
-        const index = Math.round(
-            gallery.scrollLeft / gallery.clientWidth
-        );
+        let closest = 0;
+        let smallestDistance = Infinity;
+
+        images.forEach((img, index) => {
+
+            const imageCenter = img.offsetLeft + img.offsetWidth / 2;
+            const galleryCenter = gallery.scrollLeft + gallery.offsetWidth / 2;
+
+            const distance = Math.abs(imageCenter - galleryCenter);
+
+            if(distance < smallestDistance){
+                smallestDistance = distance;
+                closest = index;
+            }
+
+        });
 
 
         dots.forEach(dot => dot.classList.remove("active"));
 
-        if(dots[index]){
-            dots[index].classList.add("active");
+        if(dots[closest]){
+            dots[closest].classList.add("active");
         }
 
     });
