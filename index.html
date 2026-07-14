@@ -91,12 +91,15 @@
     height: auto;
     border-radius: 12px;
 }
-        .gallery {
+.gallery {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
+
+    justify-content: center;
+    align-items: center;
 }
 
 .gallery::-webkit-scrollbar {
