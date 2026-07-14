@@ -91,6 +91,23 @@
     height: auto;
     border-radius: 12px;
 }
+        .gallery {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+.gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery img {
+    flex: 0 0 100%;
+    width: 100%;
+    scroll-snap-align: center;
+}
         .project-card h3 {
             margin: 20px 0 10px;
         }
